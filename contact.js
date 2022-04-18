@@ -16,20 +16,17 @@ function showData() {
     // Validation
     if (name == "") {
         return alert("Name input must not empty")
-    }
-    if (email == "") {
+    } else if (email == "") {
         return alert("Email input must not empty")
-    }
-    if (phone == "") {
+    } else if (phone == "") {
         return alert("Phone input must not empty")
-    }
-    if (subject == "") {
+    } else if (subject == "") {
         return alert("Subject input must not empty")
-    }
-    if (message == "") {
+    } else if (message == "") {
         return alert("Message input must not empty")
-    }
+    } 
 
+    // penerima 
     let emailReceiver = "rhomairama.dev@gmail.com"
 
     let a = document.createElement('a')
