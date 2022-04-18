@@ -1,70 +1,64 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-    <!-- NAVBAR START -->
-    <nav>
-        <div class="left-side">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="">
-            </a>
-
-            <ol>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-            </ol>
+    <head>
+        <title>Tugas Dumbsways hari ke 3</title>
+        <link rel="stylesheet" href="assets/style.css" >
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="">
+                </a>
+                <ol>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">My Project</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="right-side">
+                <a href="#">Contact Me</a>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>GET IN TOUCH</h1>
         </div>
-
-        <div class="right-side">
-            <a href="contact.html">Contact Me</a>
+        <div class="form-contact">
+            <div class="container-form">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="text" pattern="[0-9]"placeholder="">
+                    </div>
+                    <div>
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option hidden></option>
+                            <option>Lets Talk</option>
+                            <option>Lets Collaboration</option>
+                            <option>Iam Hiring</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                    <button type="button" onclick="showData()">Submit</button>
+                </form>
+            </div>
         </div>
-    </nav>
-    <!-- NAVBAR END -->
-
-    <!-- FORM CONTACT START -->
-    <div class="form-contact">
-        <div class="container-form">
-            <form>
-                <div>
-                    <label for="name">Name</label>
-                    <input id="name" type="text" placeholder="input your name">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" type="email">
-                </div>
-                <div>
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="text" pattern="[0-9]">
-                </div>
-                <div>
-                    <label for="subject">Subject</label>
-                    <select id="subject">
-                        <option hidden></option>
-                        <option value="1">Lets Talk</option>
-                        <option value="2">Lets Collaboration</option>
-                        <option value="3">Iam Hiring</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="message">Your Message</label>
-                    <textarea id="message"></textarea>
-                </div>
-                <button type="button" onclick="showData()">Submit</button>
-            </form>
-        </div>
-    </div>
-    <!-- FORM CONTACT END -->
-    <!-- IMPORT SCRIP FILE -->
-    <script src="contact.js"></script>
-</body>
-
+        <script src="contact.js"></script>
+    </body>
 </html>
